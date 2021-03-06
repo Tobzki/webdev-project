@@ -5,12 +5,18 @@ import './EventList.css';
 
 const eventList = props => {
     const events = props.events.map(event => {
-        return <EventItem 
+        return (
+        <EventItem 
         key={event._id} 
         eventId={event._id} 
-        title={event.title} 
+        title={event.title}
+        price={event.price}
+        date={event.date} 
         userId={props.authUserId}
-        creatorId={event.creatorId._id}/>;
+        creatorId={event.creatorId._id}
+        onDetail={props.onViewDetail}
+        />
+    );
     });
 
 return (<ul className="event_list">{events}</ul>)
