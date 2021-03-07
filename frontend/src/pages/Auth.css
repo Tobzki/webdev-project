@@ -3,6 +3,10 @@
     width: 25rem;
     max-width: 80%;
     margin: 5rem auto;
+    position: absolute;
+    top: 100px;
+    right: 190px;
+    font-size: 20px;
 }
 
 .form-control label,

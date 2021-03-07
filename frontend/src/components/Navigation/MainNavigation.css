@@ -7,10 +7,15 @@
   background: green;
   background-image: linear-gradient(to right, green , #9ACD32);
   padding: 0 2rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 15px;
 }
 
 .main-navigation_logo h1 {
