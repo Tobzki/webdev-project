@@ -35,6 +35,8 @@ class App extends Component {
       logout:this.logout }}>
     <MainNavigation />
     <main className="main-content">
+      <h2 className="title_login">Welcome to the Golf Club</h2>
+      <h3 className="title_login-play">The best place to play golf</h3>
     <Switch>
     {this.state.token && <Redirect from="/" to="/events" exact />}
     {this.state.token && (
