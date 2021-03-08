@@ -8,6 +8,7 @@ class AuthPage extends Component {
 
         isLogin: true
     };
+    
 
     static contextType = AuthContext;
 
@@ -20,8 +21,8 @@ class AuthPage extends Component {
     switchModeHandler = () => {
         this.setState(prevState => {
             return {isLogin: !prevState.isLogin};
-        })
-    }
+        });
+    };
 
     submitHandler = (event) => {
         event.preventDefault();
@@ -84,18 +85,19 @@ class AuthPage extends Component {
                 this.context.login(
                     resData.data.login.token, 
                     resData.data.login.userId, 
-                    resData.data.login.tokenExpiration);
+                    resData.data.login.tokenExpiration
+                    );
             }
         })
         .catch(err => {
             console.log(err);
         });
-
     };
 
     render(){
 
         return( 
+            
         <form className="auth-form" onSubmit={this.submitHandler}>
 
             <div className="form-control">

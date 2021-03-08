@@ -4,8 +4,8 @@
     max-width: 80%;
     margin: 5rem auto;
     position: absolute;
-    top: 120px;
-    right: 190px;
+    top: 250px;
+    right: 450px;
     font-size: 20px;
     
 }
@@ -15,7 +15,8 @@
 
     width: 100%;
     display: block;
-    border-radius: 7px;
+    border-radius: 5px;
+    font-size: 18px;
 
 }
 
