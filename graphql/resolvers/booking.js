@@ -12,7 +12,9 @@ module.exports = {
       return bookings.map((booking) => {
         return transformBooking(booking);
       });
-    } catch (err) {}
+    } catch (err) {
+      throw err;
+    }
   },
 
   bookEvent: async (args, req) => {
@@ -22,7 +24,7 @@ module.exports = {
     const fetchedEvent = await Event.findOne({ _id: args.eventId });
     const booking = new Booking({
       user: req.userId,
-      event: fetchedEvent,
+      event: fetchedEvent
     });
     const result = await booking.save();
     return transformBooking(result);
@@ -40,5 +42,5 @@ module.exports = {
     } catch (err) {
       throw err;
     }
-  },
+  }
 };

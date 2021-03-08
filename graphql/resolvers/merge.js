@@ -5,7 +5,7 @@ const { dateToString } = require('../../helpers/date');
 
 const eventLoader = new Dataloader((eventIds) => {
   return events(eventIds);
-} );
+});
 
 const userLoader = new Dataloader(userIds => {
   return User.find({_id: {$in: userIds}});
