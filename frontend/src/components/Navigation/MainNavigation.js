@@ -28,6 +28,9 @@ const mainNavigation = props => (
                         <li>
                         <NavLink to="/bookings">Bookings</NavLink>
                         </li>
+                        <li>
+                        <NavLink to="/mypage">My Page</NavLink>
+                        </li>
                     <li>
                         <button onClick={context.logout}>Logout</button>
                     </li>
