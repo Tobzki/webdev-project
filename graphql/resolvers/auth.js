@@ -28,6 +28,7 @@ module.exports = {
 
     if (!user) {
       throw new Error('User does not exist!');
+      
     }
 
     const isEqual = await bcrypt.compare(password, user.password);
@@ -36,8 +37,8 @@ module.exports = {
     }
 
     const token = jwt.sign({userId: user.id, email: user.email}, 'somesupersecretkey', {
-      expiresIn: '1h'
+      expiresIn: '2h'
     });
-    return {userId: user.id, token: token, tokenExpiration: 1}
+    return {userId: user.id, token: token, tokenExpiration: 2}
   }
 };

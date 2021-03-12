@@ -5,11 +5,13 @@ import "./MyPage.css";
 const method = () => {
   return (
     <React.Fragment>
-        <form>
+        <body>
+        
         <div className="myPage">
         <h1>Medlemssidan här, testing Git</h1>
         </div>
-        </form>
+        
+        </body>
     </React.Fragment>
   );
 };

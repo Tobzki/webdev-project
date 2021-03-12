@@ -1,6 +1,11 @@
+body {
+    height: 100%;
+    margin: 0;
+  }
+
 .myPage {
-    font-size: 10px;
-    align-items: center;
-    text-align: center;
+    background-color: white;
+    height: 100%;
+    margin: 0;
     
 }
