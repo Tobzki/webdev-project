@@ -1,6 +1,53 @@
-.aboutus {
-    font-size: 10px;
-    align-items: center;
-    text-align: center;
-    
+.card {
+  margin-top: 40px;
+  border-radius: 2.4rem;
+  background-image: linear-gradient(to bottom right, green, yellow);
+  padding: 3.2rem 4.8rem;
+  display: inline-block;
+  margin-left: 1000px;
+  
+}
+
+.card h1 {
+  margin: 0;
+  text-align: center;
+  color: green;
+}
+.card p {
+  margin: 0.8rem;
+  text-align: center;
+  color: green;
+  font-weight: bold;
+}
+
+.cardtwo {
+  margin-top: 40px;
+  border-radius: 2.4rem;
+  background-image: linear-gradient(to bottom right, green, yellow);
+  padding: 3.2rem 4.8rem;
+  display: inline-block;
+  margin-left: 1000px;
+
+  width: 17.5%;
+}
+
+.cardtwo h1 {
+  margin: 0;
+  text-align: center;
+  color: green;
+}
+.cardtwo p {
+  margin: 0.8rem;
+  text-align: center;
+  color: green;
+  font-weight: bold;
+}
+
+img {
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-decoration-break: initial;
+  box-shadow: 10px 10px;
 }
