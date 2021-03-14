@@ -1,53 +1,75 @@
-.card {
-  margin-top: 40px;
-  border-radius: 2.4rem;
-  background-image: linear-gradient(to bottom right, green, yellow);
-  padding: 3.2rem 4.8rem;
-  display: inline-block;
-  margin-left: 1000px;
-  
+.infoContainer {
+
+    display: flex;
+    
+}
+.aboutCardTobbe {
+
+  height: 300px;
+  width: 300px;
+  border-radius: 30px;
+  margin-top: 90px;
+  margin-left: 200px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 5px 10px 8px #888888;
+  background-image: url("Tobzki.JPG");
+  background-size: 100%;
+
+}
+.aboutCardHakan {
+
+  height: 300px;
+  width: 300px;
+  border-radius: 30px;
+  margin-top: 90px; 
+  margin-left: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 5px 10px 8px #888888;
+  background-image: url("håkzki.jpg");
+  background-size: 110%;
+
 }
 
-.card h1 {
-  margin: 0;
-  text-align: center;
-  color: green;
-}
-.card p {
-  margin: 0.8rem;
-  text-align: center;
-  color: green;
-  font-weight: bold;
+.hakanTitle {
+
+float: none;
+color: black;
+margin-left: 340px;
+text-shadow: 5px 5px 5px #888888;
 }
 
-.cardtwo {
-  margin-top: 40px;
-  border-radius: 2.4rem;
-  background-image: linear-gradient(to bottom right, green, yellow);
-  padding: 3.2rem 4.8rem;
-  display: inline-block;
-  margin-left: 1000px;
+.hakanTitleBottom {
 
-  width: 17.5%;
-}
+  float: none;
+  color: black;
+  margin-left: 340px;
+  text-shadow: 5px 5px 5px #888888;
+  }
 
-.cardtwo h1 {
-  margin: 0;
-  text-align: center;
-  color: green;
-}
-.cardtwo p {
-  margin: 0.8rem;
-  text-align: center;
-  color: green;
-  font-weight: bold;
-}
+.tobbeTitle {
 
-img {
-  height: 200px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  box-decoration-break: initial;
-  box-shadow: 10px 10px;
-}
+    float: none;
+    color: black;
+    margin-left: 850px;
+    margin-bottom: 40px;
+    margin-top: -90px;
+    text-shadow: 5px 5px 5px #888888;
+    }
+    
+.tobbeTitleBottom {
+    
+      float: none;
+      color: black;
+      margin-left: 850px;
+      margin-top: -25px;
+      text-shadow: 5px 5px 5px #888888;
+      }
+    
+
+

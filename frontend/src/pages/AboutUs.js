@@ -1,22 +1,24 @@
 import React, { Component } from "react";
 import "./AboutUs.css";
 
-const method = () => {
+
+function AboutUs() {
   return (
-    <div className="body">
-      <div className="card">
-        <h1>Tobias Andersson</h1>
-        <p>Back End Developer</p>
-        <img src="images/tobzki.jpg" alt="me"></img>
-      </div>
-
-      <div className="cardtwo">
-        <h1>Håkan Reinholdsson</h1>
-        <p>Front End Developer</p>
-        <img src="images/håkzki.jpg" alt="me"></img>
-      </div>
+    <div>
+    <div className="infoContainer"> 
+    <div className="aboutCardHakan">
     </div>
-  );
-};
+    <div className="aboutCardTobbe">
+  
+    </div>
+    
+    </div>
+    <h2 className="hakanTitle">Håkan Reinholdsson</h2>
+    <h2 className="hakanTitleBottom">Frontend developer</h2>
+    <h2 className="tobbeTitle">Tobias Andersson</h2>
+    <h2 className="tobbeTitleBottom">Backend developer</h2>
+    </div>
 
-export default method;
+  );
+}
+  export default AboutUs;
