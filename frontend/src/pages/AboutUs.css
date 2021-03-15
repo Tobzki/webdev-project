@@ -1,3 +1,13 @@
+.body h1 {
+  margin-left: 550px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  text-shadow: 5px 5px 5px #888888;
+  color: white;
+  
+}
+
+
 .infoContainer {
 
     display: flex;

@@ -4,7 +4,8 @@ import "./AboutUs.css";
 
 function AboutUs() {
   return (
-    <div>
+    <div className="body">
+    <h1>Meet The Team</h1>
     <div className="infoContainer"> 
     <div className="aboutCardHakan">
     </div>
