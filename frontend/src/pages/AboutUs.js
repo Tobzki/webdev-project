@@ -5,7 +5,7 @@ import "./AboutUs.css";
 function AboutUs() {
   return (
     <div className="body">
-    <h1>Meet The Team</h1>
+    <h1>Meet the team at Soft Golf</h1>
     <div className="infoContainer"> 
     <div className="aboutCardHakan">
     </div>

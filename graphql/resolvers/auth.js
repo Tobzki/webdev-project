@@ -33,7 +33,6 @@ module.exports = {
 
     const isEqual = await bcrypt.compare(password, user.password);
     if (!isEqual) {
-      alert("Password is incorrect");
       throw new Error('Password is incorrect');
     }
 
