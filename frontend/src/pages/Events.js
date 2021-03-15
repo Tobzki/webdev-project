@@ -30,7 +30,7 @@ class EventsPage extends Component {
     this.fetchEvents();
   }
 
-  startCreateEventHandler = () => {
+  startCreateEvent = () => {
     this.setState({ creating: true });
   };
 
@@ -272,7 +272,7 @@ class EventsPage extends Component {
         )}
         {this.context.token && (
           <div className="events-control">
-            <button className="btn" onClick={this.startCreateEventHandler}>
+            <button className="btn" onClick={this.startCreateEvent}>
               Create Event
             </button>
           </div>

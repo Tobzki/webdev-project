@@ -36,6 +36,7 @@ module.exports = {
       const creator = await User.findById(req.userId);
 
       if (!creator) {
+        alert("User not found.");
         throw new Error('User not found.');
         
       }

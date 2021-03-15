@@ -2,12 +2,18 @@
 
     width: 25rem;
     max-width: 80%;
-    margin: 5rem auto;
+    margin: -12rem auto;
     position: absolute;
-    top: 250px;
-    right: 450px;
+    left: 760px;
+    top: 200px;
     font-size: 20px;
     
+}
+
+.firstTitle {
+
+    color: white;
+    text-shadow: 5px 5px 5px #888888;
 }
 
 .form-control label,

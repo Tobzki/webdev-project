@@ -16,10 +16,10 @@ class BookingsPage extends Component {
   static contextType = AuthContext;
 
   componentDidMount() {
-    this.fetchBookings();
+    this.getBookings();
   }
 
-  fetchBookings = () => {
+  getBookings = () => {
     this.setState({ isLoading: true });
     const requestBody = {
       query: `
@@ -62,7 +62,7 @@ class BookingsPage extends Component {
       });
   };
 
-  deleteBookingHandler = bookingId => {
+  deleteBooking = bookingId => {
     this.setState({ isLoading: true });
     const requestBody = {
       query: `
@@ -106,7 +106,7 @@ class BookingsPage extends Component {
       });
   };
 
-  changeOutputTypeHandler = outputType => {
+  changeOutputType = outputType => {
     if (outputType === 'list') {
       this.setState({ outputType: 'list' });
     } else {
@@ -121,13 +121,13 @@ class BookingsPage extends Component {
         <React.Fragment>
           <BookingsControls
             activeOutputType={this.state.outputType}
-            onChange={this.changeOutputTypeHandler}
+            onChange={this.changeOutputType}
           />
           <div>
             {this.state.outputType === 'list' ? (
               <BookingList
                 bookings={this.state.bookings}
-                onDelete={this.deleteBookingHandler}
+                onDelete={this.deleteBooking}
               />
             ) : (
               <BookingsChart bookings={this.state.bookings} />

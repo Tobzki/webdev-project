@@ -1,11 +1,49 @@
-body {
-    height: 100%;
-    margin: 0;
-  }
+
 
 .myPage {
-    background-color: white;
-    height: 100%;
-    margin: 0;
+  height: 650px;
+  width: 800px;
+  border-radius: 30px;
+  margin-top: 90px;
+  margin-left: 200px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 5px 10px 8px #888888;
+  background-color: white;
+  
+  
     
+}
+.myPageInfo {
+
+  height: 150px;
+  width: 150px;
+  border-radius: 30px;
+  margin-top: -2100px; 
+  margin-left: -550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 5px 10px 8px #888888;
+  background-image: url("håkzki.jpg");
+  background-size: 110%;
+}
+
+.memberTitle {
+
+  color: black;
+  margin-top: -385px;
+  font-size: 28px;
+  text-decoration: underline;
+  
+}
+
+.golfStats {
+  height: 280px;
+  width: 280px;
+  background-image: url("golf20.jpg");
+  background-repeat: no-repeat;
 }

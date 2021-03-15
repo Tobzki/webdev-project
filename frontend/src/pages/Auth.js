@@ -18,7 +18,7 @@ class AuthPage extends Component {
         this.passwordEl = React.createRef();
     }
 
-    switchModeHandler = () => {
+    switchButtonHandler = () => {
         this.setState(prevState => {
             return {isLogin: !prevState.isLogin};
         });
@@ -76,6 +76,7 @@ class AuthPage extends Component {
             }
         }).then(res => {
             if(res.status !==200 && res.status !==201){
+                alert("Check user name or password!");
                 throw new Error('Failed!');
             }
             return res.json();
@@ -100,7 +101,7 @@ class AuthPage extends Component {
 
             
         <form className="auth-form" onSubmit={this.submitHandler}>
-
+            <h1 className="firstTitle">Welcome to the Golf Club</h1>
 
             <div className="form-control">
                 <label htmlFor="email">Email</label>
@@ -112,7 +113,7 @@ class AuthPage extends Component {
             </div>
             <div className="form-actions">
                 <button type="submit">Submit</button>
-                <button type="button" onClick={this.switchModeHandler}>
+                <button type="button" onClick={this.switchButtonHandler}>
                     Switch to {this.state.isLogin ? 'Signup' : 'Login'}</button>
                 
                 </div>
