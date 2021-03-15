@@ -28,6 +28,10 @@ AboutUs: Sida för oss utvecklare där klienten kan få ta del av information om
 
 Auth: Innehåller logiken för inloggning eller att skapa en ny användare. Vid inloggning, vid state isLogin, skickas en query för att stämma av email och lösenord. Vid skapande av ny användare, vid state !isLogin, skickas istället en mutation. Det är switchen knappen som avgör om man är på login eller sign up. 
 
+Events: Here we are working with state management that is important regarding front end. And also as explained in the back end section that we use our queries to fetch data in a requestBody. Try/catch for best error logging management.
+
+App: Here we take advantage of React in terms of components when we navigate throughout our application.
+
 Bookings: Logiken för bokningarna. Fetch för att hämta bokningarna associerade till den inloggade användaren. 
 
 
