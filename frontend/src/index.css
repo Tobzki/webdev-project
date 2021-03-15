@@ -54,9 +54,3 @@ body {
     background: yellowgreen;
     border-color: yellowgreen;
 }
-@media only screen and (max-width: 900px) {
-    body {
-      background-color: lightblue;
-      position: absolute;
-    }
-  }
