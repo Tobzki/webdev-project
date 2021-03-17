@@ -65,8 +65,9 @@ class AuthPage extends Component {
                 email: email,
                 password: password
             }
-        };
+        };alert("New user created. Please switch to Login to login.");
         }
+        
 
         fetch('http://localhost:8000/graphql', {
             method: 'POST', 
@@ -80,6 +81,7 @@ class AuthPage extends Component {
                 throw new Error('Failed!');
             }
             return res.json();
+            
         })
         .then(resData => {
             if(resData.data.login.token){
